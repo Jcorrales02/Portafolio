@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Challenge #1</title>
+</head>
+<body>
+    <main>
+
+        <div class="principal">
+            <section class="left">
+
+                <div class="logo">
+                    <img class="logo_img" src="imagenes/Logo.png" alt="logo de alura">
+                </div>
+
+                <div class="cuadroDeTexto">
+                    <textarea class="text" name="text" id="cuadro_texto" cols="40" rows="5" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+
+                <div class="botones">
+
+                    
+                    <div class="info">
+                        <img src="imagenes/info.png" alt="info_icon">
+                        <p>Solo letras minusculas y sin acentos</p>
+                        
+                    </div>
+                    <div class="botones_encrip">
+                        <button class="encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="desencriptar" onclick="desencriptador()">Desencriptar</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="right">
+                
+                <div>
+                    <div class="img">
+                        <img class="img_right" id="img_right" src="imagenes/Muñeco.png" alt="imagen de muñeco">
+
+                    </div >
+
+                    <div class="text_box">
+
+                        <p class="text__right"id="text_info">Ningún mensaje fue encontrado.</p>
+
+                    </div>
+                    
+                    <div>
+
+                        <textarea class="text__right_info" name="texto cifrado" id="result_text" cols="30" rows="10" placeholder="Ingrese el texto quie desea encriptar o desemcriptar."></textarea>
+
+                        <button class="copy" id="copy" onclick="copiar()"> Copiar </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+     
+    </main>
+</body>
+</html>
